@@ -1,0 +1,43 @@
+@startuml "Class Diagram"
+
+class Curso {
+    - nomeCurso : String
+    - codigoCurso : int
+    - plataforma : String
+    - qtdHoras : int
+    - link : String
+    +getNome()
+    +setNome()
+    +getCodigo()
+    +setCodigo()
+    +getPlataforma()
+    +setPlataforma()
+    +getHoras()
+    +setHoras()
+    +getLink()
+    +setLink()
+}
+
+class Aula {
+    - nomeCurso : String
+    - codigoCurso : int
+    - plataforma : String
+    - qtdHoras : int
+    - link : String
+    +getNome()
+    +setNome()
+    +getCodigo()
+    +setCodigo()
+    +getPlataforma()
+    +setPlataforma()
+    +getHoras()
+    +setHoras()
+    +getLink()
+    +setLink()
+}
+
+Aula -> Curso
+
+'Order "1" *-- "n" OrderItem
+
+@enduml
