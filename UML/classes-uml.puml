@@ -1,0 +1,30 @@
+@startuml "Class Diagram"
+
+class User {
+    
+}
+
+class Admin {
+    
+}
+
+class Student {
+    
+}
+
+class Course {
+    
+}
+
+class Track {
+    
+}
+
+Admin -|> User
+User <|- Student
+
+Course o- Track
+
+'Order "1" *-- "n" OrderItem
+
+@enduml

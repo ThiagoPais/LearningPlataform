@@ -1,0 +1,27 @@
+@startuml usecase
+
+skinparam actorStyle awesome
+left to right direction
+
+'actors
+:Admin: as ADM
+:Student: as STD
+
+'use cases
+(Create course) as CC
+(Create track) as CT
+(Edit track) as ET
+(See progress) as SP
+(Sign up to a track) as SUT
+(Mark course as done) as MAD
+
+'links
+ADM --> CC
+ADM --> CT
+ADM --> ET
+ADM --> SP
+STD --> SP
+STD --> SUT
+STD --> MAD
+
+@enduml
